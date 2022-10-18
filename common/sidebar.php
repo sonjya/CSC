@@ -4,7 +4,7 @@
         <a href="../pages/dashboard.php" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-view-dashboard"></span> Dashboard</a>
 
         <p class="offcanvas-item-title"><strong>CSC</strong></p>
-        <a href="" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-book-edit"></span> Attendance</a>
+        <a href="../pages/mentor-attendance.php" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-book-edit"></span> Attendance</a>
         <a href="../pages/mentors.php" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-account-box-multiple"></span> Mentors</a>
         
         <p class="offcanvas-item-title"><strong>CSG</strong></p>

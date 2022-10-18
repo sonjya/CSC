@@ -17,7 +17,7 @@ $navfetch = mysqli_fetch_assoc($navresult);
         </a>
         <div class="dropdown">
             <button class="btn btn-username" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <?=$navfetch['lastname'] . ', ' . $navfetch['firstname']?>
+                <strong><?=$navfetch['lastname'] . ', ' . $navfetch['firstname']?></strong>
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Profile Settings</a></li>

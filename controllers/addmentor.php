@@ -12,7 +12,7 @@ try {
     mysqli_query($connection,$sql);
     header("location:../pages/mentors.php");
 } catch (Exception $e) {
-    echo "<script>alert('ERROR')</script>";
+    header("location:../pages/mentors.php");
 }
 
 

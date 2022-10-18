@@ -12,6 +12,7 @@
 ?>
 
 <div class="container container-mentorpanel">
+    <h1>MENTORS</h1>
     <div class="card">
         <div class="card-body">
             <h3>ADD NEW MENTOR</h3>
@@ -65,14 +66,14 @@
                             <?php if($mentorfetch['active']==1) { ?>
                                 <td><span class="badge bg-success">ACTIVE</span></td>
                                 <td>
-                                    <a href="../controllers/setmentorinactive.php?id=<?=$mentorfetch['studentID']?>" class="btn btn-sm btn-outline-danger"><span class="mdi mdi-arrow-down-bold"></span></a>
-                                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span class="mdi mdi-cog-outline"></span></button>
+                                    <a href="../controllers/setmentorinactive.php?id=<?=$mentorfetch['studentID']?>&by=<?=$navfetch['firstname']?>" class="btn btn-sm btn-outline-danger"><span class="mdi mdi-arrow-down-bold"></span></a>
+                                    <a href="../pages/editmentor.php?id=<?=$mentorfetch['studentID']?>" class="btn btn-outline-warning btn-sm"><span class="mdi mdi-cog-outline"></span></a>
                                 </td>
                             <?php } else { ?>
                                 <td><span class="badge bg-danger">INACTIVE</span></td>
                                 <td>
-                                    <a href="../controllers/setmentoractive.php?id=<?=$mentorfetch['studentID']?>" class="btn btn-sm btn-outline-success"><span class="mdi mdi-arrow-up-bold"></a>
-                                    <button type="button" class="btn btn-outline-warning btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span class="mdi mdi-cog-outline"></span></button>
+                                    <a href="../controllers/setmentoractive.php?id=<?=$mentorfetch['studentID']?>&by=<?=$navfetch['firstname']?>" class="btn btn-sm btn-outline-success"><span class="mdi mdi-arrow-up-bold"></a>
+                                    <a href="../pages/editmentor.php?id=<?=$mentorfetch['studentID']?>" class="btn btn-outline-warning btn-sm"><span class="mdi mdi-cog-outline"></span></a>
                                 </td>
                             <?php } ?>
                             
