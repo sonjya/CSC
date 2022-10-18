@@ -15,9 +15,10 @@
     <div class="card">
         <div class="card-body">
             <h3>ADD NEW MENTOR</h3>
-            <form method="post" action="">
+            <form method="post" action="../controllers/addmentor.php">
                 <div class="row">
                     <div class="col-4">
+                        <input type="hidden" name="currentuser" value="<?=$navfetch['firstname']?>">
                         <strong>STUDENT ID:</strong><input type="number" class="form-control" name="studentid" required>
                     </div>
                     <div class="col-6">
@@ -79,26 +80,6 @@
                     <?php } ?>
                 </tbody>
             </table>
-        </div>
-    </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">EDIT</h1>
-            </div>
-
-            <div class="modal-body">
-                ...
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">CANCEL</button>
-                <button type="button" class="btn btn-primary">SUBMIT</button>
-            </div>
         </div>
     </div>
 </div>

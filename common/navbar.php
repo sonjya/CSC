@@ -13,11 +13,11 @@ $navfetch = mysqli_fetch_assoc($navresult);
 <nav class="navbar bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-            CCE SKILLS CLINIC // <?=$navfetch['role'] ?>
+            CCE SKILLS CLINIC <span class="mdi mdi-chevron-right"></span> <?=$navfetch['role'] ?>
         </a>
-        <div class="dropdown dropstart">
+        <div class="dropdown">
             <button class="btn btn-username" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <?=$navfetch['firstname'] ?>
+                <?=$navfetch['lastname'] . ', ' . $navfetch['firstname']?>
             </button>
             <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Profile Settings</a></li>
