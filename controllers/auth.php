@@ -8,7 +8,7 @@ require_once 'dbconnection.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$sql = "select userid,firstname,role from users where username='$username' and password=md5('$password') and active=1 limit 1";
+$sql = "select userid from users where username='$username' and password=md5('$password') and active=1 limit 1";
 $fetch = mysqli_fetch_assoc(mysqli_query($connection,$sql));
 
 if (!$fetch) {
@@ -16,7 +16,8 @@ if (!$fetch) {
     header('Location:../index.php');
 } else {
     $_SESSION['auth'] = true;
-    echo "<script>alert('WELCOME');</script>";
+    $_SESSION['userid'] = $fetch['userid'];
+    header("location:../pages/dashboard.php");
 }
 
 ?>
