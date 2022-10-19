@@ -5,14 +5,20 @@
 
         <p class="offcanvas-item-title"><strong>CSC</strong></p>
         <a href="../pages/mentor-attendance.php" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-book-edit"></span> Attendance</a>
-        <a href="../pages/mentors.php" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-account-box-multiple"></span> Mentors</a>
+        <?php if($navfetch['role'] == "ADMINISTRATOR") { ?>
+            <a href="../pages/mentors.php" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-account-box-multiple"></span> Mentors</a>
+        <?php } ?>
         
         <p class="offcanvas-item-title"><strong>CSG</strong></p>
         <a href="" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-book-edit"></span> Attendance</a>
-        <a href="" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-account-box-multiple"></span> Committee</a>
-
-        <p class="offcanvas-item-title"><strong>ACCOUNTS</strong></p>
-        <a href="" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-shield-crown"></span> System Users</a>
+        <?php if($navfetch['role'] == "ADMINISTRATOR") { ?>
+            <a href="" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-account-box-multiple"></span> Committee</a>
+        <?php } ?>
+        
+        <?php if($navfetch['role'] == "ADMINISTRATOR") { ?>
+            <p class="offcanvas-item-title"><strong>ACCOUNTS</strong></p>
+            <a href="" class="btn btn-offcanvas-item col-12 offcanvas-item"><span class="mdi mdi-sidebar mdi-shield-crown"></span> System Users</a>
+        <?php } ?>
     </div>
 </div>
 

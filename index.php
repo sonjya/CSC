@@ -14,7 +14,7 @@
                 <div class="card-body">
                     <form method="post" action="controllers/auth.php">
                         <h1>LOGIN: CSC</h1>
-                            <?php if($_SESSION['auth']==false) { ?>
+                            <?php if(isset($_SESSION['authfalse'])) { ?>
                                 <div class="alert alert-danger">
                                     <span class="mdi mdi-alert-circle"></span> Invalid username or password
                                 </div>

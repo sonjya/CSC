@@ -12,10 +12,10 @@ $sql = "select userid from users where username='$username' and password=md5('$p
 $fetch = mysqli_fetch_assoc(mysqli_query($connection,$sql));
 
 if (!$fetch) {
-    $_SESSION['auth'] = false;
+    $_SESSION['authfalse'] = false;
     header('Location:../index.php');
 } else {
-    $_SESSION['auth'] = true;
+    $_SESSION['authtrue'] = true;
     $_SESSION['userid'] = $fetch['userid'];
     header("location:../pages/dashboard.php");
 }
