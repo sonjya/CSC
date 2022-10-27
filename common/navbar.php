@@ -10,7 +10,7 @@ $navfetch = mysqli_fetch_assoc($navresult);
 
 ?>
 
-<nav class="navbar bg-light">
+<nav class="navbar bg-white">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             CCE SKILLS CLINIC <span class="mdi mdi-chevron-right"></span> <?=$navfetch['role'] ?>
@@ -36,5 +36,8 @@ $navfetch = mysqli_fetch_assoc($navresult);
     }
     .navbar {
         z-index: 9999;
+    }
+    .bg-white {
+        color: #FFFFFF;
     }
 </style>
