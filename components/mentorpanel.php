@@ -88,6 +88,6 @@
 <style>
     .container-mentorpanel {
         margin-top:50px;
-        margin-right: 150px;
+        margin-right: 100px;
     }
 </style>

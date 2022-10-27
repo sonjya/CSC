@@ -1,0 +1,13 @@
+remove CSG
+
+add condition if mentor already login for today. (mentee pud)
+
+add mentee form new UI for in --not found, register si mentee ni STA
+
+si mentee and mentor butang ug program title --preparation sa desc analytics (chart js)
+
+si mentee need ug year level.
+
+si mentor butangan ug expertise. one to many
+
+dashboard desc

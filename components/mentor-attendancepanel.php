@@ -82,7 +82,7 @@ $attendanceresult = mysqli_query($connection,$attendance);
 <style>
     .mentorattendance-container {
         margin-top:50px;
-        margin-right:150px;
+        margin-right:100px;
     }
     .attendance-notfound {
         text-indent:10ch;
